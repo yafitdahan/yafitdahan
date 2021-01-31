@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function details() {
+            pelet.innerHTML = "Your name is " + theName.value +
+                " Your second name is " + secondName.value +
+                " Your phone is " + phone.value;
+        }
+    </script>
+    <style>
+        .output {
+            color: blue;
+            background-color: pink;
+            border: red solid 2px;
+            text-align: center;
+        }
+        .theButton {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<input type="text" id="theName" placeholder="Enter your name">
+<br>
+<input type="text" id="secondName" placeholder="Enter your second name">
+<br>
+<input type="tel" id="phone" placeholder="Enter your phone">
+<br>
+<button onclick="details()" class="theButton">ENTER</button>
+<p id="pelet" class="output"></p>
+
+</body>
+</html>
